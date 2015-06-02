@@ -168,7 +168,7 @@ function shoot(evt) {
     if (!allowedInput) { return; }
 
     // Play the sound
-    var shotSFX = new Audio("sound/shot.wav");
+    var shotSFX = new Audio("sound/shot.mp3");
     shotSFX.play();
 
     // Calculate the angle....
