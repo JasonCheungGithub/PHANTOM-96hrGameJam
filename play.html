@@ -1,0 +1,57 @@
+<!DOCTYPE html> 
+<html> 
+
+<head>
+	<meta charset="utf-8">
+	<title>PLAY PHANTOM</title> 
+	<link rel="stylesheet" href="css/gameplay.css" />
+
+	<!-- Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Anton|Montserrat' rel='stylesheet' type='text/css'>
+
+	<!-- CreateJS Framework -->
+	<script src="https://code.createjs.com/easeljs-0.8.0.min.js"></script>
+	<script src="https://code.createjs.com/tweenjs-0.6.0.min.js"></script>
+	<script src="http://code.createjs.com/soundjs-0.6.0.min.js"></script>
+	<script src="https://code.createjs.com/preloadjs-0.6.0.min.js"></script>
+
+	<!-- Others scripts -->
+    <script src="https://rawgithub.com/madrobby/keymaster/master/keymaster.js"></script>
+	<script src="js/TweenLite.min.js"></script>
+	<script src="js/CSSPlugin.min.js"></script>
+	<script src="js/EaselPlugin.min.js"></script>
+
+	<!-- My Scripts -->
+	<script src="js/Background.js"></script>
+	<script src="js/UserInterface.js"></script>
+	<script src="js/GameOverScreen.js"></script>
+	<script src="js/Player.js"></script>
+	<script src="js/Ghost.js"></script>
+	<script src="js/Target.js"></script>
+	<script src="js/Bullet.js"></script>
+	<script src="js/gameplay.js"></script>
+
+</head> 
+
+<body onload="init();"> 
+
+	<!-- Canvas -->
+	<canvas id="canvas" width="1200" height="720" style="background-color: white;">
+	</canvas> 
+
+	<!-- Audio -->
+	<audio id="bgm">
+  		<source  src="sound/bgm.mp3" type="audio/mpeg">
+  		Your browser does not support audio.
+	</audio>
+
+	<audio id="bgm-reversed">
+		<source src="sound/bgm_reversed.wav" type="audio/mpeg">
+	</audio>
+
+	<audio id="shot">
+	  	<source src="sound/shot.wav" type="audio/wav">
+	</audio>
+
+</body>
+</html>
