@@ -16,6 +16,6 @@ MikeBeasterfeld | https://github.com/MikeBeasterfeld/easeljs/blob/master/keypad.
 - Keymaster
 
 ## Assets & Services:
-Button Generator | http://www.bestcssbuttongenerator.com/#/18
-Sound effects | http://soundbible.com/tags-game.html
-GitHub | https://github.com/JasonCheungGithub/PHANTOM-96hrGameJam
+- Button Generator | http://www.bestcssbuttongenerator.com/#/18
+- Sound effects | http://soundbible.com/tags-game.html
+- GitHub | https://github.com/JasonCheungGithub/PHANTOM-96hrGameJam
