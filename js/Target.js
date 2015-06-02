@@ -9,8 +9,8 @@ function Target() {
 
 	this.pixelsPerSecond = 100;
 	// Location where possesion occurs
-	this.initialX = getRandomInt(canvasWidth * 0.10, canvasWidth * 0.90);
-	this.initialY = getRandomInt(canvasHeight * 0.10, canvasHeight * 0.90);
+	this.initialX = getRandomInt(canvasWidth * 0.20, canvasWidth * 0.80);
+	this.initialY = getRandomInt(canvasHeight * 0.20, canvasHeight * 0.80);
 
 	this.xVel = getRandomInt(-10, 10);
 	this.yVel = getRandomInt(-10, 10);

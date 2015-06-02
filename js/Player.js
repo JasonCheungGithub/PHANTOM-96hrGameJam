@@ -20,12 +20,22 @@ function Player() {
     }
 
 	this.move = function(xDelta, yDelta) {
-		if (this.x + this.radius <= canvasWidth && this.x - this.radius >= 0) {
-			this.x += this.movementCalculation(xDelta);
-		} else { console.log ('out of bounds');}
-		if (this.y + this.radius <= canvasHeight && this.y - this.radius >= 0) {
-			this.y += this.movementCalculation(yDelta);
+		this.x += this.movementCalculation(xDelta);
+		if (this.x + this.radius >= canvasWidth) {
+			this.x = canvasWidth - this.radius - 1;
 		}
+		if (this.x - this.radius <= 0) {
+			this.x = this.radius + 1;
+		}
+
+		this.y += this.movementCalculation(yDelta);
+		if (this.y + this.radius >= canvasHeight) {
+			this.y = canvasHeight - this.radius - 1;
+		}
+		if (this.y - this.radius <= 0) {
+			this.y = this.radius + 1;
+		}
+
 	}
 
 	this.leaveGhost = function(layer) {
