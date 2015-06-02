@@ -184,7 +184,6 @@ function shoot(evt) {
     console.log("Angle: " + angle);
 
     playerBulletLayer.addChild(new Bullet(playerX, playerY, angle, currentFrame));
-    console.log("Player bullets active: " + playerBulletLayer.children.length);
 }
 
 function movement(event) {

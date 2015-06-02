@@ -83,7 +83,7 @@ p.restartGame = function (event) {
 }
 
 p.handleClick = function (event) {
-	document.location.href = "menu.html";
+	document.location.href = "index.html";
 };
 
 p.handleRollOver = function(event) {       

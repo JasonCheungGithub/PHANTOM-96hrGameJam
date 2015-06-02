@@ -9,8 +9,8 @@ function Target() {
 
 	this.pixelsPerSecond = 100;
 	// Location where possesion occurs
-	this.initialX = getRandomInt(0, canvasWidth * 0.80);
-	this.initialY = getRandomInt(0, canvasHeight * 0.80);
+	this.initialX = getRandomInt(canvasWidth * 0.10, canvasWidth * 0.90);
+	this.initialY = getRandomInt(canvasHeight * 0.10, canvasHeight * 0.90);
 
 	this.xVel = getRandomInt(-10, 10);
 	this.yVel = getRandomInt(-10, 10);
@@ -38,11 +38,11 @@ function Target() {
 
 	this.move = function(xDelta, yDelta) {
 		// Reverse velocity if off screen (ie. Bounce off edges)
-		if (this.x >= canvasWidth || this.x <= 0) { 
+		if (this.x + this.radius >= canvasWidth || this.x - this.radius <= 0) { 
 			console.log("off x screen vel: " + this.xVel );
 			this.xVel = this.xVel * -1; 
 		} 
-		if (this.y >= canvasHeight || this.y <= 0) { 
+		if (this.y + this.radius >= canvasHeight || this.y - this.radius <= 0) { 
 			console.log("off y screen");
 			this.yVel = this.yVel * -1; } 
 		// Move the target
